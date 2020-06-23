@@ -3,11 +3,7 @@
     padding: 0;
     background: white;
 }
-#container{
-    width: 960px;
-    margin: 0 auto;
-    position: relative;
-}
+
 header {
     max-width: 940px;
     padding: 30px;
@@ -26,61 +22,59 @@ header nav a{
     text-decoration: none;
     color: black;
 }
- #banner{
-     width: 940px;
-     height: 366px;
-     margin: 0 auto;
-     background-color: #FBDFDB; 
-     border-radius: 30px;
-     border-top-right-radius: 30px; 
-    position: relative;
- }
 
- #banner h1{
-    background-color: #FBDFDB;
+#banner{
+    width: 940px;
+    height: 366px;
+    margin: 0 auto;
+    background-color: #FBDFDB; 
+    border-radius: 30px;
+    border-top-right-radius: 30px; 
+   position: relative;
+}
+
+#banner h1{
+   background-color: #FBDFDB;
+   position: absolute;
+   margin: 4%;
+   top: 10%;
+}
+
+#banner p{
+   background-color: #FBDFDB;
+   width: 40%;
+   height: 7%;
+   margin: 4%; 
+   position: absolute;
+   top: 30%;
+}
+
+#banner img {
+    width: 216px;
+    height: 300px;
     position: absolute;
-    margin: 4%;
-    top: 10%;
- }
-
- #banner p{
+    bottom: 0;
+    right: 7%;
     background-color: #FBDFDB;
-    width: 40%;
-    height: 7%;
-    margin: 4%; 
-    position: absolute;
-    top: 30%;
- }
+}
 
- #banner img {
-     width: 216px;
-     height: 300px;
-     position: absolute;
-     bottom: 0;
-     right: 7%;
-     background-color: #FBDFDB;
- }
+#acessada {
+    margin: 4.5% auto 1.8% auto;
+}
 
- #acessada {
-     margin: 4.5% auto 1.8% auto;
- }
-
- /* cards */
-#contente{
+#content{
     width: 940px;
     margin: 4.5% auto 1.8% auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
     
 }
-
-.card{
-    display: grid;
+ .card {
+   display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
+ }
 
-#contente h2 {
+
+#content h2 {
     font-size: 24px;
     color: #111111;
     margin-bottom: 1.8%;
@@ -125,6 +119,7 @@ header nav a{
     font-size: 15px;
     margin-bottom: 15px;
 }
+
 /* Modal */
 .modal-overlay{
     background-color: rgba(0, 0, 0, 0.7);
@@ -193,31 +188,15 @@ header nav a{
     visibility: visible;
 }
 
-/* Receita */
-.content{
-    width: 940px;
-    margin: 4.5% auto 1.8% auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+
+footer{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
     
 }
 
-
-
-
-
-
- /* footer */
- footer{
-     width: 100%;
-     margin-top: 20px;
-     text-align: center;
-     
- }
-
- footer p {
-    background-color: #eeeeee;
-    padding: 1% 0;
- }
- 
+footer p {
+   background-color: #eeeeee;
+   padding: 1% 0;
+}
