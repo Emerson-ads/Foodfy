@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+header {
+    max-width: 1000px;
+    padding: 30px;
+    margin: 5px  auto ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+header img{
+    width: 90px;
+    height: 26px;
+}
+header nav a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+.produtos-descricao {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.produtos-descricao img {
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.produtos-descricao  h1 {
+    text-align: center;
+    font-size: 45px;
+    color: teal;
+}
+
+.produtos-descricao h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.produtos-descricao p {
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.produtos-descricao li {
+    padding-bottom:5px ;
+    margin-left: 23px;
+}
+
+.ingredientes {
+    max-width: 1000px;
+    display: grid;
+}
+
+.ingredientes-titulo,.ingredientes-preparo,.ingredientes-informacoes-adicionais{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin-bottom: 10px;
+    max-width: 400px;
+       
+}
+
+.ingredientes-butom,.preparo-butom, .ingredientes-informacoes-adicionais{
+    margin-left: 10px;
+    padding-top: 8px;
+}
+
+.ingredientes-titulo a, .preparo-butom a, .ingredientes-informacoes-adicionais a {
+    padding-top: 8px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: solid 1px blue;
+    
+}
+
+.ingredientes-lista li {
+    padding-bottom:5px ;
+    margin-left: 23px;
+}
+
+.ingredients-details {
+    max-width: 95%;
+
+}
+
+.ingredients-details p {
+   margin-bottom: 100px;
+}
+
+.preparation-detailsls li {
+    padding-bottom:5px ;
+    margin-left: 23px;
+}
+
+.ingredientes-informacoes-adicionais h2 {
+ font-size: 20px;
+}
+
+footer{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+footer p {
+   background-color: #eeeeee;
+   padding: 1% 0;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

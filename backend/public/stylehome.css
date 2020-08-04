@@ -66,11 +66,12 @@ header nav a{
     width: 940px;
     margin: 4.5% auto 1.8% auto;
     display: grid;
-    
+    grid-template-columns: 1fr 1fr 1fr;
+    cursor: pointer;
 }
  .card {
    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    
  }
 
 

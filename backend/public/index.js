@@ -1,23 +1,33 @@
-const modalOverlay = document.querySelector('.modal-overlay');
+
 const cards = document.querySelectorAll('.cards')
+const ingredientes = document.querySelectorAll('.ingredients-details')
+const buttons = document.querySelectorAll('.button')
+console.log(buttons)
+console.log(ingredientes)
+console.log(cards)
+
 
 for (let card of cards){
     card.addEventListener("click", function(){
-        const hGet = card.querySelector('.info h6')
-        const text = hGet.innerHTML
-        const pGet = card.querySelector('.info p')
-        const textP = pGet.innerHTML
-        const imgId = card.getAttribute("id")
-        modalOverlay.classList.add('active')
-        modalOverlay.querySelector('img').src = `/assets/${imgId}` 
-        modalOverlay.querySelector('.info-modal h1').innerHTML = text
-        modalOverlay.querySelector('.info-modal p').innerHTML = textP
-
+        const receitaId = card.getAttribute('id')
+        window.location.href = `/recipes/${receitaId}`
         
-        console.log(imgId)
     })
 }
 
-document.querySelector('.close-modal').addEventListener("click", function (){
-    modalOverlay.classList.remove('active')
-})
+for ( let [i,button] of buttons.entries()){    
+    
+    button.addEventListener('click', () => {
+
+        if(ingredientes[i].classList.contains('hide')){
+            ingredientes[i].classList.remove('hide')
+            ingredientes[i].classList.add('show')
+            button.innerHTML = "Esconder"
+        }else {
+            ingredientes[i].classList.add('hide')
+            ingredientes[i].classList.remove('show')
+            button.innerHTML = "Mostrar"
+        }
+        
+    })
+}

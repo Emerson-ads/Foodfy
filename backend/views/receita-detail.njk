@@ -1,0 +1,67 @@
+{% extends "layout.njk" %}
+    {% block head %}
+        <title>FoodFy</title>
+        <link rel="stylesheet" href="/stylereceitadetail.css">
+    {% endblock %}
+
+    {% block content %}
+    <section class="produtos-descricao" >
+
+        <img src="{{items.image}}" alt="Imagem de {{items.title}}"/>
+    
+        <h1>
+            {{items.title}}
+        </h1>
+
+        <h3>
+            {{items.author}}
+        </h3>
+
+        <div class="ingredientes">
+
+            <div class="ingredientes-titulo">
+                <h2>Ingredientes</h2> 
+                <div class="ingredientes-butom">
+                    <a class="button">Esconder</a>
+                </div>
+            </div>
+        
+
+            <ul class="ingredientes-lista ingLista ingredients-details" >
+
+                {% for ingredientes in items.ingredients %}
+                
+                <li id="ingredients-list" > {{ingredientes}};</li> 
+
+                {% endfor %}
+            </ul>
+
+            <div class="ingredientes-preparo ingLista">
+                <h2>Modo Preparo</h2>
+                <div class="preparo-butom">
+                    <a  class="button" > Esconder </a>  
+                </div>
+            </div>
+            
+                <ul class="preparation-details ingredients-details">
+                    {% for item in items.preparation %}
+            
+                        <li> {{item}}</li>
+            
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="ingredientes-informacoes-adicionais">
+                <h2>Informações adicionais</h2>
+                <div class="preparo-butom">
+                    <a  class="button" > Esconder </a>  
+                </div> 
+            </div>   
+
+            <p id="ingredients-information" class="ingredients-details" >{{items.information}}</p>
+
+        </div>
+    </section>
+             
+{% endblock %}
+      

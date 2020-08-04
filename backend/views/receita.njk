@@ -6,132 +6,17 @@
 
     {% block content %}
         <section class="content">
-                    
-            <div class="cards" id="burger.png">
-                <img src="/assets/burger.png" alt="burger">
+            {% for item in items %}      
+                <div class="cards" id="{{loop.index0}}">
+                    <img src="{{item.image}}" alt="{{item.title}}">
 
-                <div class="info">
-                    <h6>Triplo bacon burger</h6>
-                    <p>By Emerson Silva</p>
-                </div>
-            </div>
-
-            <div class="cards" id="pizza.png">
-                <img src="/assets/pizza.png" alt="pizza">
-
-                <div class="info">
-                    <h6>Pizza 4 estações</h6>
-                    <p>By Talita</p>
-                </div>
-            </div>
-
-            <div class="cards" id="espaguete.png">
-                <img src="/assets/espaguete.png" alt="espaguete">
-
-                <div class="info">
-                    <h6>Espaguete ao molho</h6>
-                    <p>By marlene Mendonça</p>
-                </div>
-            </div>
-
-            <div class="cards" id="lasanha.png">
-                <img src="/assets/lasanha.png" alt="lasanha">
-
-                <div class="info">
-                    <h6>Lasanha mac n'Chesse</h6>
-                    <p>By Everton john</p>
-                </div>
-            </div>
-
-            <div class="cards" id="doce.png">
-                <img src="/assets/doce.png" alt="doce">
-
-                <div class="info">
-                    <h6>Docinhos pão-do-céu</h6>
-                    <p>By João Mendonça</p>
-                </div>
-            </div>
-
-            <div class="cards" id="asinhas.png">
-                <img src="/assets/asinhas.png" alt="Assinhas">
-
-                <div class="info">
-                    <h6>Asinhas de Frango ao Barbecue</h6>
-                    <p>By Vilma Pinto</p>
-                </div>
-            </div>
-
-            <div class="cards" id="burger.png">
-                <img src="/assets/burger.png" alt="burger">
-
-                <div class="info">
-                    <h6>Triplo bacon burger</h6>
-                    <p>By Emerson Silva</p>
-                </div>
-            </div>
-
-            <div class="cards" id="pizza.png">
-                <img src="/assets/pizza.png" alt="pizza">
-
-                <div class="info">
-                    <h6>Pizza 4 estações</h6>
-                    <p>By Talita</p>
-                </div>
-            </div>
-
-            <div class="cards" id="espaguete.png">
-                <img src="/assets/espaguete.png" alt="espaguete">
-
-                <div class="info">
-                    <h6>Espaguete ao molho</h6>
-                    <p>By marlene Mendonça</p>
-                </div>
-            </div>
-
-            <div class="cards" id="lasanha.png">
-                <img src="/assets/lasanha.png" alt="lasanha">
-
-                <div class="info">
-                    <h6>Lasanha mac n'Chesse</h6>
-                    <p>By Everton john</p>
-                </div>
-            </div>
-
-            <div class="cards" id="doce.png">
-                <img src="/assets/doce.png" alt="doce">
-
-                <div class="info">
-                    <h6>Docinhos pão-do-céu</h6>
-                    <p>By João Mendonça</p>
-                </div>
-            </div>
-
-            <div class="cards" id="asinhas.png">
-                <img src="/assets/asinhas.png" alt="Assinhas">
-
-                <div class="info">
-                    <h6>Asinhas de Frango ao Barbecue</h6>
-                    <p>By Vilma Pinto</p>
-                </div>
-            </div>
-                
-            
-
+                    <div class="info">
+                        <h6>{{item.title}}</h6>
+                        <p>{{item.author}}</p>
+                    </div>
+                </div> 
+            {% endfor %}
         </section>
         
-        <div class="modal-overlay">
-            <div class="modal">
-                <div class="img-modal">
-                    <img src="" alt="">
-                </div>
-                <div class="info-modal">
-                    <h1>Asinhas de Frango ao barbecue</h1>
-                    <p>by Emerson</p>
-                </div>
-                <div class="close-modal">
-                    <a >Fechar modal</a>    
-                </div>
-            </div>
-        </div>
     {% endblock %}
       
